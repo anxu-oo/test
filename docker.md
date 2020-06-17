@@ -16,6 +16,8 @@
 
 >  <font size=2>Docker 引擎由如下主要的组件构成：Docker 客户端（Docker Client）、Docker 守护进程（Docker daemon）、containerd 以及 runc。它们共同负责容器的创建和运行。</font>
 
+<!--more-->
+
 ## <font size=2>**Docker 引擎的架构示意图**</font>
 
 > ##### ![docker1](./image/docker1.gif)
