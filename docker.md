@@ -146,7 +146,7 @@ docker start docker #启动容器
 
 +++
 
-![images6](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-32-31.png)
+![images6](./image/Snipaste_2020-06-16_17-32-31.png)
 
 | 选项       | 说明         |
 | ---------- | ------------ |
@@ -177,7 +177,7 @@ docker commit -m="test" -a="anxu" web web/nodejs:v1
 docker images
 ```
 
-![images6](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-43-55.png)
+![images6](./image/Snipaste_2020-06-16_17-43-55.png)
 
 ### 设置镜像标签
 
@@ -189,7 +189,7 @@ docker images
 docker tag e3b3fd976b9d web/nodejs:v2
 ```
 
-![images8](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-49-16.png)
+![images8](./image/Snipaste_2020-06-16_17-49-16.png)
 
 > 可见e3b3fd976b9d有两个标签
 
@@ -206,13 +206,13 @@ docker run -d -P training/webapp python app.py#创建容器
 docker ps #查看容器信息
 ```
 
-![dockerrunp](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-19-00.png)
+![dockerrunp](./image/Snipaste_2020-06-16_17-19-00.png)
 
 > 可见把容器的5000端口映射到了本机的1025端口
 >
 > 浏览器访问
 
-![images1](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-05-12.png)
+![images1](./image/Snipaste_2020-06-16_17-05-12.png)
 
 ```bash
 docker stop 42ab#停止容器
@@ -226,7 +226,7 @@ docker run  --name=web -d -p 1111:5000  training/webapp python app.py
 docker ps 
 ```
 
-![images2](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-16-36.png)
+![images2](./image/Snipaste_2020-06-16_17-16-36.png)
 
 > 可见NAMES 是 web
 >
@@ -236,19 +236,19 @@ docker ps
 docker logs web#查看标准输出
 ```
 
-![images](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-22-31.png)
+![images](./image/Snipaste_2020-06-16_17-22-31.png)
 
 ```bash
 docker top web#查看web容器内的进程
 ```
 
-<img src="C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-23-39.png" alt="images44" style="zoom:200%;" />
+<img src="./image/Snipaste_2020-06-16_17-23-39.png" alt="images44" style="zoom:200%;" />
 
 ```bash
 docker inspect web #查看容器具体信息
 ```
 
-![images5](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_17-29-02.png)
+![images5](./image/Snipaste_2020-06-16_17-29-02.png)
 
 ## Docker 容器连接
 
@@ -267,7 +267,7 @@ docker ps -l
 
 另外-p也可以指定IP
 
-![images9](C:\Users\anxu\Desktop\test\image\Snipaste_2020-06-16_18-01-05.png)
+![images9](./image/Snipaste_2020-06-16_18-01-05.png)
 
 这样我们就可以通过访问 127.0.0.1:1112 来访问容器的 5000 端口。
 

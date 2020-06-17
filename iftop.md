@@ -13,7 +13,7 @@ tags:
  iftop -i eth0 -P -n -m 100M -p -F 10.20.4.0/24
 ```
 
-![](C:\Users\anxu\Desktop\image\iftop.png)
+![images](./image/Snipaste_2020-06-17_14-03-12.png)
 
 > 界面上面显示的是类似刻度尺的刻度范围，为显示流量图形的长条作标尺用的。`
 >
