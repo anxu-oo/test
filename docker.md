@@ -18,6 +18,10 @@
 
 <!--more-->
 
+### docker工作流水线
+
+![image-20200618092648912](./image/image-20200618092648912.png)
+
 ## <font size=2>**Docker 引擎的架构示意图**</font>
 
 > ##### ![docker1](./image/docker1.gif)
@@ -202,9 +206,11 @@ docker tag e3b3fd976b9d web/nodejs:v2
 ```bash
 docker pull training/webapp#下载镜像
 docker images#查看镜像	
-docker run -d -P training/webapp python app.py#创建容器
+docker run -d -P --rm -e HOSTNAME=test training/webapp python app.py#创建容器
 	-P 把容器开放的端口映射到本机
 	-d 后台运行
+	--rm 当容器停止时自动删除容器
+	-e 传递环境参数（也可以传递mysql密码等）
 docker ps #查看容器信息
 ```
 
@@ -237,6 +243,8 @@ docker ps
 ```bash
 docker logs web#查看标准输出
 ```
+
+> 日志时间时间可能不同启动容器时 -v 共享磁盘的/etc/localtime
 
 ![images](./image/Snipaste_2020-06-16_17-22-31.png)
 
